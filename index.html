@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Dutch Decentralized Applications">
+    <meta name="description" content="EverSAFU = Ever Secure Asset Fund for Users EverSAFU Version 2 (ES2) provides a decentralized financial asset that rewards users with a sustainable and fixed compound interest model through the use of its unique ASAR protocol.">
+    <meta property="og:description" content="EverSAFU = Ever Secure Asset Fund for Users EverSAFU Version 2 (ES2) provides a decentralized financial asset that rewards users with a sustainable and fixed compound interest model through the use of its unique ASAR protocol." />
+    <meta property="og:title" content="EverSAFU V2 - Dapp" />
+    <title>ES2 - Dapp</title>
+    <meta property="og:image" itemprop="image" content="img/EverSAFU.png" />
+    <meta property="og:url" content="https://eversafuv2.com" />
+    <link rel="shortcut icon" href="img/EverSAFU.png">
+    <link rel="apple-touch-icon" href="img/EverSAFU.png">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='css/site.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Sidebar-->
+    <div class="nav-mob hidepc" style="display: none;">
+        <div class="container-fluid mb-4 text-center">
+            <button class="btn" style="margin-left:1rem; margin-top:-2.5rem; position:absolute; top:3rem; left:0rem;" onclick="HideMenu();"><i class="bx bx-x" id="" style="color:white; font-size:2.1rem;"></i></button>
+            <img src="img/Logo.gif" alt="EverSAFU V2 logo" style="width:35%; height:35%; object-fit: contain; margin-top:0.5rem;">
+        </div>
+        <div class="container text-center" style="font-weight:800;">
+            <br />
+            <a style="text-decoration:none;" target="_blank" href="https://eversafuv2.com"><h2 class="text-gradient mb-3">Project Home</h2></a>
+            <a style="text-decoration:none;" target="_blank" href="https://eversafuv2.gitbook.io/eversafu-version-2-protocol/"><h2 class="text-gradient mb-4">Gitbook</h2></a>
+            <br />
+            <a target="_blank" href="https://twitter.com/EversafuV2"><i class="bx bxl-twitter text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://t.me/EverSAFU_V2_OFFICIAL"><i class="bx bxl-telegram text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://discord.gg/ZaUZdkNf3P"><i class="bx bxl-discord text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://www.facebook.com/EverSafuv2/"><i class="bx bxl-facebook text-gradient" style="font-size:2.5rem;"></i></a>
+        </div>
+    </div>
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <div class="navbar-mob hidepc">
+                <div class="row" style="padding:0; margin:0;">
+                    <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
+                        <a class="button-mob" href="/">
+                            <i class="bx bx-home active fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1 active">Home</h6>
+                        </a>
+                    </div>
+                    <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
+                        <a class="button-mob" href="/calculator">
+                            <i class="bx bx-calculator fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1">Calc</h6>
+                        </a>
+                    </div>
+                    <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
+                        <a class="button-mob" href="/account">
+                            <i class="bx bx-user fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1">Acc</h6>
+                        </a>
+                    </div>
+                    <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
+                        <a class="button-mob" href="/crew">
+                            <i class="bx bx-chair fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1">Crew</h6>
+                        </a>
+                    </div>
+                    <div class="col-cust text-center">
+                        <a class="button-mob" href="/staking">
+                            <i class="bx bxs-bank fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1">Stake</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand text-gradient2 fs-5" href="/" style="font-weight:700;"><img alt="EverSAFU V2 Logo" class="brand-logo" src="img/EverSAFU.png"><span class="atmospheric fs-5">E<span class="atmospheric hidemob">ver</span>S<span class="atmospheric hidemob">afu V</span>2</span></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://eversafuv2.com">Project Site</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Token
+                                </a>
+                                <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/account">Account</a></li>
+                                    <li><a class="dropdown-item" href="/calculator">Calculator</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    NFT
+                                </a>
+                                <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/minting">Minting & Gallery</a></li>
+                                    <li><a class="dropdown-item" href="/crew">Crew Quarters</a></li>
+                                    <li><hr class="dropdown-divider" style="background:black !important; opacity: 1;"></li>
+                                    <li><a class="dropdown-item" href="/staking">Staking</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="d-flex">
+                        <div class="hidepc" style="margin-right:1.5rem; margin-top:0.5rem;">
+                            <a class="fs-2" style="color: #6dbffc !important " onclick="$('.nav-mob').toggle(300);"><i class="bx bx-menu"></i></a>
+                        </div>
+
+                        <div class="btn-gradient-outline-wrap" id="btn-connect">
+                            <button class="btn btn-gradient-outline fs-5" type="button" data-bs-toggle="modal" data-bs-target="#walletModal">Connect</button>
+                        </div>
+
+                        <div class="dropstart" style="display:none;" id="btn-disconnect">
+                            <button class="btn-gradient-outline-wrap" type="button" id="walletMenu" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius:15px;">
+                                <i class="btn-gradient-outline bx bx-wallet fs-3" style="padding:0.65rem;"></i>
+                            </button>
+
+                            <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="walletMenu" style="position:absolute;">
+                                <li><span class="dropdown-item" id="useraccount"></span></li>
+                                <li><hr class="dropdown-divider" style="background:black !important; opacity: 1;"></li>
+                                <li><a class="dropdown-item" onclick="AddCoin();">Add ES2</a></li>
+                                <li><a class="dropdown-item" onclick="AddBUSD();">Add BUSD</a></li>
+                                <li><a class="dropdown-item" onclick="Disconnect();">Disconnect</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+
+            <div class="pricebox">
+                <div class="profile-details">
+                    <div class="name_job">
+                        <div class="name atmospheric text-gradient">ES2 Price:</div>
+                        <div class="name atmospheric text-gradient" id="pricebot">0.11615$</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="align-items-center justify-content-center d-flex mt-5 pb-5">
+                <div class="container">
+                    <h1 class="text-gradient2 atmospheric text-center-mob">Dashboard</h1>
+                    <hr />
+                    <h5 class="text-white-50 text-center" id="useraccount"></h5>
+                    <div class="row mt-3 align-items-center justify-content-center text-center" style="padding:0; margin:0;">
+                        <div class="col-lg-6 col-12 mt-4 order-mob-1">
+                            <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                <div class="btn-gradient-outline" style="padding:1rem;">
+                                    <h5 class="text-gradient atmospheric">Circulating Supply</h5>
+                                    <h4 class="mt-3 text-white-75" id="circulatingsupply">Loading...</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 mt-4  order-mob-2">
+                            <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                <div class="btn-gradient-outline" style="padding:1rem;">
+                                    <h5 class="text-gradient atmospheric">Total Supply</h5>
+                                    <h4 class="mt-3 text-white-75" id="totalsupply">Loading...</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3 order-mob-5" style="padding:0;">
+                            <div class="row" style="padding:0; margin:0;">
+                                <div class="col-12 mt-4">
+                                    <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                        <div class="btn-gradient-outline" style="padding:1rem;">
+                                            <h5 class="text-gradient atmospheric">Treasury Value</h5>
+                                            <h4 class="mt-3 text-white-75" id="treasury">Loading...</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                        <div class="btn-gradient-outline" style="padding:1rem;">
+                                            <h5 class="text-gradient atmospheric">Market Cap</h5>
+                                            <h4 class="mt-3 text-white-75" id="marketcap">Loading...</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                        <div class="btn-gradient-outline" style="padding:1rem;">
+                                            <h5 class="text-gradient atmospheric">Liquidity Pool</h5>
+                                            <h4 class="mt-3 text-white-75" id="liquidity">Loading...</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3  order-mob-4" style="padding:0;">
+                            <div class="row" style="padding:0; margin:0;">
+                                <div class="col-12 mt-4">
+                                    <div class="card text-center btn-gradient-outline-wrap" style="border-radius: 15px; vertical-align:middle; color: white;">
+                                        <div class="btn-gradient-outline text-center justify-content-center align-items-center" style="padding: 1rem; height: 100%; padding-top: 4.5rem; padding-bottom: 4.5rem;">
+                                            <h5 class="text-gradient atmospheric">Rebase In:</h5>
+                                            <div class="circle mt-4">
+                                                <div class="border"></div>
+                                                <div class="stop fs-4 atmospheric" id="timer">Loading...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3 order-mob-6" style="padding:0;">
+                            <div class="row align-items-center justify-content-center text-center" style="padding:0; margin:0;">
+                                <div class="col-12 mt-4">
+                                    <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                        <div class="btn-gradient-outline" style="padding:1rem;">
+                                            <h5 class="text-gradient atmospheric">Fire Pit Amount</h5>
+                                            <h4 class="mt-3 text-white-75" id="burned">Loading...</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                        <div class="btn-gradient-outline" style="padding:1rem;">
+                                            <h5 class="text-gradient atmospheric">Fire Pit Value</h5>
+                                            <h4 class="mt-3 text-white-75" id="burnedvalue">Loading...</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                        <div class="btn-gradient-outline" style="padding:1rem;">
+                                            <h5 class="text-gradient atmospheric">Fire Pit/Supply Ratio</h5>
+                                            <h4 class="mt-3 text-white-75" id="burnedratio">Loading...</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 mt-3  order-mob-7">
+                            <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                <div class="btn-gradient-outline" style="padding:1rem;">
+                                    <h5 class="text-gradient atmospheric">24HR Volume</h5>
+                                    <h4 class="mt-3 text-white-75" id="24volume">Loading...</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 mt-3  order-mob-9">
+                            <div class="card text-center btn-gradient-outline-wrap" style="height: fit-content; border-radius: 15px; color: white;">
+                                <div class="btn-gradient-outline" style="padding:1rem;">
+                                    <h5 class="text-gradient atmospheric">Total BUSD Distribution</h5>
+                                    <h4 class="mt-3 text-white-75" id="totalbusd">Loading...</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-4 text-white mt-3 order-mob-9">
+                            <div class="card btn-gradient-outline-wrap">
+                                <div class="btn-gradient-outline" style="padding:1rem;">
+                                    <h5 class="mt-2 atmospheric text-gradient2">ES2 Supply Statistics:</h5>
+                                    <hr>
+                                    <p class="atmospheric pb-font" style="text-align:left;">
+                                        Circ. ES2
+                                        <span style="float:right;" class="atmospheric">
+                                            Burned ES2
+                                        </span>
+                                    </p>
+                                    <div class="progress progress-main text-center mb-4 fs-6" style="height:2rem;">
+                                        <div id="prog-circulating" style="background: var(--esgradient3); width: 0% " class="progress-bar progress-bar-main progress-text">0%</div>
+                                        <div id="prog-burned" style="background-color: #ab0000; width: 0% " class="progress-bar progress-bar-main progress-text">0%</div>
+                                    </div>
+
+                                    <p class="atmospheric pb-font" style="text-align:left;">
+                                        Claimed Tokens
+                                        <span style="float:right;" class="atmospheric">
+                                            DEX Tokens
+                                        </span>
+                                    </p>
+                                    <div class="progress progress-main text-center mb-4 fs-6" style="height:2rem;">
+                                        <div id="prog-wallets" style="background: var(--esgradient3); width: 0% " class="progress-bar progress-bar-main progress-text">0%</div>
+                                        <div id="prog-forsale" style="background: #ab0000; width: 0% " class="progress-bar progress-bar-main progress-text">0%</div>
+                                    </div>
+
+                                    <p class="atmospheric pb-font" style="text-align:left;">
+                                        Liquidity
+                                        <span style="float:right;" class="atmospheric">
+                                            Market Cap
+                                        </span>
+                                    </p>
+                                    <div class="progress progress-main text-center mb-4 fs-6" style="height:2rem;">
+                                        <div id="prog-liquidity" style="background: var(--esgradient3); width: 0" class="progress-bar progress-bar-main progress-text">0%</div>
+                                        <div id="prog-marketcap" style="background: #ab0000; width: 0 " class="progress-bar progress-bar-main progress-text">0%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer small  text-center pb-3">
+                <div class="container pt-3">
+                    <a target="_blank" href="https://twitter.com/EversafuV2/" class="social text-gradient2"><i class="bx bxl-twitter"></i></a>
+                    <a target="_blank" href="https://t.me/EverSAFU_V2_OFFICIAL" class="social text-gradient2"><i class="bx bxl-telegram"></i></a>
+                    <a target="_blank" href="https://www.facebook.com/EverSafuv2/" class="social text-gradient2"><i class="bx bxl-facebook"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/eversafu_v2/" class="social text-gradient2"><i class="bx bxl-instagram"></i></a>
+                    <a target="_blank" href="https://discord.gg/ZaUZdkNf3P" class="social text-gradient2"><i class="bx bxl-discord"></i></a>
+                </div><br>
+                <div class="container px-4 px-lg-5 text-white">2022 © <a href="https://www.dutchdapps.com/" style="text-decoration:none; color:inherit;">DUTCH DAPPS</a> - ALL RIGHTS RESERVED</div>
+            </footer>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="chainModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background: #2c2626; box-shadow: 0 0 0 3px #8c8c8c; ">
+                <div class="modal-body" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url(img/bg7.jpg) no-repeat; background-size: contain; ">
+                    <div class="row" style="padding:0; margin:0;">
+                        <button onclick="Connect();" class="col-5 text-center mt-3 pt-3 pb-3" style="background: black; box-shadow: 0 0  7px white; border-radius: 10px; color: white; ">
+                            <img src="img/mm.png" />
+                            <h6 class="pt-3">MetaMask</h6>
+                        </button>
+                        <div class="col-2">
+                        </div>
+                        <button onclick="Connect();" class="col-5 text-center mt-3 pt-3 pb-3" style="background: black; box-shadow: 0 0  7px white; border-radius: 10px; color: white; ">
+                            <img src="img/tw.png" />
+                            <h6 class="pt-3">Trust Wallet</h6>
+                        </button>
+                        <button onclick="ConnectWC();" class="col-5 text-center mt-3 pt-3 pb-3" style="background: black; box-shadow: 0 0  7px white; border-radius: 10px; color: white; ">
+                            <img src="img/wc.png" />
+                            <h6 class="pt-3">Wallet Connect</h6>
+                        </button>
+                        <div class="col-2 mt-3">
+                        </div>
+                        <button onclick="Connect();" class="col-5 text-center mt-3 pt-3 pb-3" style="background: black; box-shadow: 0 0  7px white; border-radius: 10px; color: white; ">
+                            <img src="img/sfp.png" style="filter:invert(0.75)" />
+                            <h6 class="pt-3">Other</h6>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js" integrity="sha512-jRzb6jM5wynT5UHyMW2+SD+yLsYPEU5uftImpzOcVTdu1J7VsynVmiuFTsitsoL5PJVQi+OtWbrpWq/I+kkF4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.4.1/web3-provider.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/vars.js"></script>
+    <script src="js/connectivity.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        Load();
+    </script>
+</body>
+</html>
