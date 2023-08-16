@@ -203,6 +203,70 @@
         </div>
     </div>
 
+    <footer class="footer small  text-center pb-3">
+        <div class="container pt-3">
+            <a target="_blank" href="https://twitter.com/EversafuV2/" class="social text-gradient2"><i class="bx bxl-twitter"></i></a>
+            <a target="_blank" href="https://t.me/EverSAFU_V2_OFFICIAL" class="social text-gradient2"><i class="bx bxl-telegram"></i></a>
+            <a target="_blank" href="https://www.facebook.com/EverSafuv2/" class="social text-gradient2"><i class="bx bxl-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/eversafu_v2/" class="social text-gradient2"><i class="bx bxl-instagram"></i></a>
+            <a target="_blank" href="https://discord.gg/ZaUZdkNf3P" class="social text-gradient2"><i class="bx bxl-discord"></i></a>
+        </div><br>
+        <div class="container px-4 px-lg-5 text-white">2022 © <a href="https://www.dutchdapps.com/" style="text-decoration:none; color:inherit;">DUTCH DAPPS</a> - ALL RIGHTS RESERVED</div>
+    </footer>
+</div>
+</div>
+
+
+<div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="chainModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background: #2c2626; box-shadow: 0 0 0 3px #8c8c8c; ">
+        <div class="modal-body" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 75%, #000 100%), url(img/bg7.jpg) no-repeat; background-size: contain; ">
+            <div class="row" style="padding:0; margin:0;">
+                <button onclick="Connect();" class="col-5 text-center mt-3 pt-3 pb-3" style="background: black; box-shadow: 0 0  7px white; border-radius: 10px; color: white; ">
+                    <img src="img/mm.png" />
+                    <h6 class="pt-3">MetaMask</h6>
+                </button>
+                <div class="col-2">
+                </div>
+                <button onclick="Connect();" class="col-5 text-center mt-3 pt-3 pb-3" style="background: black; box-shadow: 0 0  7px white; border-radius: 10px; color: white; ">
+                    <img src="img/tw.png" />
+                    <h6 class="pt-3">Trust Wallet</h6>
+                </button>
+                <button onclick="ConnectWC();" class="col-5 text-center mt-3 pt-3 pb-3" style="background: black; box-shadow: 0 0  7px white; border-radius: 10px; color: white; ">
+                    <img src="img/wc.png" />
+                    <h6 class="pt-3">Wallet Connect</h6>
+                </button>
+                <div class="col-2 mt-3">
+                </div>
+                <button onclick="Connect();" class="col-5 text-center mt-3 pt-3 pb-3" style="background: black; box-shadow: 0 0  7px white; border-radius: 10px; color: white; ">
+                    <img src="img/sfp.png" style="filter:invert(0.75)" />
+                    <h6 class="pt-3">Other</h6>
+                </button>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js" integrity="sha512-jRzb6jM5wynT5UHyMW2+SD+yLsYPEU5uftImpzOcVTdu1J7VsynVmiuFTsitsoL5PJVQi+OtWbrpWq/I+kkF4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://github.com/WalletConnect/walletconnect-monorepo/releases/download/1.4.1/web3-provider.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/vars.js"></script>
+<script src="js/connectivity.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+Load();
+</script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js" integrity="sha512-jRzb6jM5wynT5UHyMW2+SD+yLsYPEU5uftImpzOcVTdu1J7VsynVmiuFTsitsoL5PJVQi+OtWbrpWq/I+kkF4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
