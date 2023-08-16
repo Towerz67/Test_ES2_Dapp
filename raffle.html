@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html id="html" lang="en" dir="ltr" data-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Dutch Decentralized Applications">
+    <meta name="description" content="EverSAFU = Ever Secure Asset Fund for Users EverSAFU Version 2 (ES2) provides a decentralized financial asset that rewards users with a BUSD Dividend.">
+    <meta property="og:description" content="EverSAFU = Ever Secure Asset Fund for Users EverSAFU Version 2 (ES2) provides a decentralized financial asset that rewards users with a BUSD Dividend." />
+    <meta property="og:title" content="EverSAFU V2 - Dapp" />
+    <title>ES2 - Dapp</title>
+    <meta property="og:image" itemprop="image" content="img/EverSAFU.png" />
+    <meta property="og:url" content="https://eversafuv2.com" />
+    <link rel="shortcut icon" href="img/EverSAFU.png">
+    <link rel="apple-touch-icon" href="img/EverSAFU.png">
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='css/site.css' rel='stylesheet'>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="" />
+    <meta name="twitter:title" content="ES2 Raffle" />
+    <meta name="twitter:description" content="The Official ES2 Raffle" />
+    <meta name="twitter:image" content="img/og_image.png" />
+    <!--<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>-->
+    <link href='css/util.css' rel='stylesheet'>
+</head>
+<body>
+    <!--Sidebar-->
+    <div class="nav-mob hidepc" style="display: none;">
+        <div class="container-fluid mb-4 text-center">
+            <button class="btn" style="margin-left:1rem; margin-top:-2.5rem; position:absolute; top:3rem; left:0rem;" onclick="HideMenu();"><i class="bx bx-x" id="" style="color:white; font-size:2.1rem;"></i></button>
+            <img src="img/Logo.gif" alt="EverSAFU V2 logo" style="width:35%; height:35%; object-fit: contain; margin-top:0.5rem;">
+        </div>
+        <div class="container text-center" style="font-weight:800;">
+            <br />
+            <a style="text-decoration:none;" target="_blank" href="https://eversafuv2.com"><h2 class="text-gradient mb-3">Project Home</h2></a>
+            <a style="text-decoration:none;" target="_blank" href="https://eversafuv2.gitbook.io/eversafu-version-2-protocol/"><h2 class="text-gradient mb-4">Gitbook</h2></a>
+            <br />
+            <a target="_blank" href="https://twitter.com/EversafuV2"><i class="bx bxl-twitter text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://t.me/EverSAFU_V2_OFFICIAL"><i class="bx bxl-telegram text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://discord.gg/ZaUZdkNf3P"><i class="bx bxl-discord text-gradient" style="font-size:2.5rem;"></i></a>
+            <a target="_blank" href="https://www.facebook.com/EverSafuv2/"><i class="bx bxl-facebook text-gradient" style="font-size:2.5rem;"></i></a>
+        </div>
+    </div>
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <div class="navbar-mob hidepc">
+                <div class="row" style="padding:0; margin:0;">
+                    <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
+                        <a class="button-mob" href="/">
+                            <i class="bx bx-home active fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1 active">Home</h6>
+                        </a>
+                    </div>
+                    <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
+                        <a class="button-mob" href="/raffle">
+                            <i class="bx bx-calculator fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1">Raf</h6>
+                        </a>
+                    </div>
+                    <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
+                        <a class="button-mob" href="/account">
+                            <i class="bx bx-user fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1">Acc</h6>
+                        </a>
+                    </div>
+                    <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
+                        <a class="button-mob" href="/crew">
+                            <i class="bx bx-chair fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1">Crew</h6>
+                        </a>
+                    </div>
+                    <div class="col-cust text-center">
+                        <a class="button-mob" href="/staking">
+                            <i class="bx bxs-bank fs-4 pt-3"></i>
+                            <br />
+                            <h6 class="pb-1">Stake</h6>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand text-gradient2 fs-5" href="/" style="font-weight:700;"><img alt="EverSAFU V2 Logo" class="brand-logo" src="img/EverSAFU.png"><span class="atmospheric fs-5">E<span class="atmospheric hidemob">ver</span>S<span class="atmospheric hidemob">afu V</span>2</span></a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://eversafuv2.com">Project Site</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Token
+                                </a>
+                                <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/account">Account</a></li>
+                                    <li><a class="dropdown-item" href="/raffle">Raffle</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    NFT
+                                </a>
+                                <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="/minting">Minting & Gallery</a></li>
+                                    <li><a class="dropdown-item" href="/crew">Crew Quarters</a></li>
+                                    <li><hr class="dropdown-divider" style="background:black !important; opacity: 1;"></li>
+                                    <li><a class="dropdown-item" href="/staking">Staking</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="d-flex">
+                        <div class="hidepc" style="margin-right:1.5rem; margin-top:0.5rem;">
+                            <a class="fs-2" style="color: #6dbffc !important " onclick="$('.nav-mob').toggle(300);"><i class="bx bx-menu"></i></a>
+                        </div>
+
+                        <div class="btn-gradient-outline-wrap" id="btn-connect">
+                            <button class="btn btn-gradient-outline fs-5" type="button" data-bs-toggle="modal" data-bs-target="#walletModal">Connect</button>
+                        </div>
+
+                        <div class="dropstart" style="display:none;" id="btn-disconnect">
+                            <button class="btn-gradient-outline-wrap" type="button" id="walletMenu" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius:15px;">
+                                <i class="btn-gradient-outline bx bx-wallet fs-3" style="padding:0.65rem;"></i>
+                            </button>
+
+                            <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="walletMenu" style="position:absolute;">
+                                <li><span class="dropdown-item" id="useraccount"></span></li>
+                                <li><hr class="dropdown-divider" style="background:black !important; opacity: 1;"></li>
+                                <li><a class="dropdown-item" onclick="AddCoin();">Add ES2</a></li>
+                                <li><a class="dropdown-item" onclick="AddBUSD();">Add BUSD</a></li>
+                                <li><a class="dropdown-item" onclick="Disconnect();">Disconnect</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+    <!--<nav>
+        <div class="container">
+            <div class="navi d-flex flex-row w-100 justify-content-between">
+                <div class="d-flex flex-row align-items-center">
+                    <img src="img/Logo.png" style="max-width:50px;" />
+                    <a class='hide-sm mx-md-5 mx-3 td-none cp text-white-60 fw-600 active' href="#">Raffle</a>
+                    <a class='hide-sm mx-md-5 mx-3 td-none cp text-white-60 fw-600' target="_blank" href="https://eversafuv2.com">Website</a>
+                    <a class='hide-sm mx-md-5 mx-3 mr-0 td-none cp text-white-60 fw-600' target="_blank" href="https://app.eversafuv2.com">dApp</a>
+                </div>
+                <div class="d-flex flex-row align-items-center">
+                    <button id="btn-connect" class="btn-1 text-white">Connect</button>
+                    <button id="btn-disconnect" class="btn-1 text-white" style="display:none;">
+                        <div class="d-flex align-items-center">
+                            <i class='bx bxs-wallet-alt fs-4 text-white'></i>
+                        </div>                        
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>-->
+    <div class="main container">
+        <div class="row m-0 p-0 box-1 px-5 py-4">
+            <div class="col-md-6 d-flex justify-content-center flex-column align-items-center text-center">
+                <h1 class="text-gradient2 atmospheric text-center-mob">Raffle</h1>
+                <hr />
+                <h5 class="text-white-30 mt-3">Current Round</h5>
+                <h4 class="text-white mb-0" id="round">0</h4>
+                <img src="img/ticket.png" style="max-width:350px; max-height:250px;" />
+                <h5 class="text-white-30">Your Tickets</h5>
+                <h4 class="text-white" id="myBalance">0</h4>
+                <h5 class="text-white-30 mt-4">Tickets Sold</h5>
+                <h4 class="text-white" id="prognr">0 / 100</h4>
+                <div class="progress w-75 prog-1 my-2">
+                    <div id="progbar" class="progress-bar progbar-1" role="progressbar" style="width: 0%"></div>
+                </div>
+                <h5 class="text-white-30 mb-0 mt-2" id="progperc">80%</h5>
+                <h6 class="text-white-30 mt-5">Click <a class="text-white-60 td-none" target="_blank" href="https://onedrive.live.com/view.aspx?resid=55F5057BF6655BE4!40063&ithint=file%2cxlsx&authkey=!AIaAGydwW6L_sIE">here</a> for drawing results.</h6>
+
+            </div>
+            <div class="col-md-6 mt-5 mt-md-0">
+                <h4 class="text-white mt-2">Buy a Ticket</h4>
+                <h6 class="text-white-60">
+                    Discover the ES2 50/30/20 Raffle:<br /> 100 tickets per round, 1 ticket equals 1 entry. Drawings follow ticket sell-out, giving 50% of the pot to the winner 30% to the treasury and 20% to the fire pit. Each ticket costs 20,000 ES2.
+                </h6>
+                <div class="d-flex flex-row w-100 justify-content-between mt-7">
+                    <h4 class="text-white-30">Your ES2:</h4>
+                    <h4 class="text-white-60" id="es2balance">0 ES2</h4>
+                </div>
+                <div class="d-flex flex-row w-100 justify-content-between mt-3">
+                    <h4 class="text-white-30">Price:</h4>
+                    <h4 class="text-white-60" id="cost">0 ES2</h4>
+                </div>
+                <div class="d-flex flex-row mt-7 mb-5 align-items-end">
+                    <input type="number" class="form-1" id="input1" value="0">
+                    <span class="text-white-30 va-bot fs-3 pb-1">Tickets</span>
+                </div>
+                <div class="d-flex flex-row align-items-center justify-content-between my-5" style="min-width:20vw;">
+                    <p class="text-white-60 ws-nowrap mb-0 hide-xs" id="minrange">0</p>
+                    <input type="range" class="slider mx-3" id="range1" max="100" min="0" value="0" step="1">
+                    <p class="text-white-60 ws-nowrap mb-0 hide-xs" id="maxrange">100</p>
+                </div>
+                <div class="d-flex w-100 justify-content-center mt-5 mb-3">
+                    <button id="btn-mint" class="btn-1 text-white px-5 py-1 mt-3" onclick="BuyTicket();">Mint</button>
+                    <button id="btn-approve" class="btn-1 text-white px-5 py-1 mt-3" onclick="ApproveToken();" style="display:none;">Approve</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/3.0.0-rc.5/web3.min.js" integrity="sha512-jRzb6jM5wynT5UHyMW2+SD+yLsYPEU5uftImpzOcVTdu1J7VsynVmiuFTsitsoL5PJVQi+OtWbrpWq/I+kkF4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/connect.js" type="text/javascript"></script>
+    <script src="js/wc.js" type="module"></script>
+
+    <script>
+        const rpcs = {
+            BSC: {
+                chainid: 56,
+                url: "https://bsc-dataseed1.binance.org/",
+                symbol: "BNB",
+                img: "bsc.png",
+                rpcToAdd: {
+                    chainId: '0x1',
+                    chainName: 'BSC Mainnet',
+                    nativeCurrency: {
+                        name: 'Binance Coin',
+                        symbol: 'BNB',
+                        decimals: 18
+                    },
+                    blockExplorerUrls: ['https://bscscan.com'],
+                    rpcUrls: ['https://bsc-dataseed1.binance.org/', 'https://bsc-dataseed2.binance.org/', 'https://bsc-dataseed3.binance.org/', 'https://bsc-dataseed4.binance.org/', 'https://bsc-dataseed1.defibit.io/', 'https://bsc-dataseed2.defibit.io/', 'https://bsc-dataseed3.defibit.io/', 'https://bsc-dataseed4.defibit.io/'],
+                }
+            }
+        }
+        const abiToken = [{ "inputs": [], "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "owner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "spender", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "value", "type": "uint256" }], "name": "Approval", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "address", "name": "autoLiquidityReceiver", "type": "address" }, { "indexed": false, "internalType": "address", "name": "treasuryReceiver", "type": "address" }, { "indexed": false, "internalType": "address", "name": "autofirePit", "type": "address" }], "name": "FeeReceiversChanged", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "uint256", "name": "liquidityFee", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "treasuryFee", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "busdDividendFee", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "autofirePitFee", "type": "uint256" }], "name": "FeesChanged", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "uint256", "name": "epoch", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "totalSupply", "type": "uint256" }], "name": "LogRebase", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "previousOwner", "type": "address" }], "name": "OwnershipRenounced", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "previousOwner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" }], "name": "OwnershipTransferred", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "bool", "name": "swapEnabled", "type": "bool" }], "name": "SwapEnabled", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "from", "type": "address" }, { "indexed": true, "internalType": "address", "name": "to", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "value", "type": "uint256" }], "name": "Transfer", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "uint256", "name": "minSharesRequired", "type": "uint256" }], "name": "minShresRequiredChanged", "type": "event" }, { "inputs": [], "name": "DECIMALS", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "MAX_UINT256", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "RATE_DECIMALS", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_allowedFragnebt", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_autoAddLiquidity", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_autoRebase", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_initRebaseStartTime", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_lastAddLiquidityTime", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_lastRebasedTime", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_minSharesRequired", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_swapEnabled", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_swapEnabledTime", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "_totalSupply", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "owner_", "type": "address" }, { "internalType": "address", "name": "spender", "type": "address" }], "name": "allowance", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "spender", "type": "address" }, { "internalType": "uint256", "name": "value", "type": "uint256" }], "name": "approve", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "autoLiquidityReceiver", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "autofirePit", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "autofirePitFee", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "account", "type": "address" }], "name": "balanceOf", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "blacklist", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "busdDividendFee", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_addr", "type": "address" }], "name": "checkFeeExempt", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "decimals", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "spender", "type": "address" }, { "internalType": "uint256", "name": "subtractedValue", "type": "uint256" }], "name": "decreaseAllowance", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "es2DividendReceiver", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "feeDenominator", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "getCirculatingSupply", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "accuracy", "type": "uint256" }], "name": "getLiquidityBacking", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "spender", "type": "address" }, { "internalType": "uint256", "name": "addedValue", "type": "uint256" }], "name": "increaseAllowance", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "", "type": "address" }], "name": "isDividendExempt", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "isNotInSwap", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "isOwner", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "liquidityFee", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "manualSync", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "minSharesRequired", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "name", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "owner", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "pair", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "pairContract", "outputs": [{ "internalType": "contract IPancakeSwapPair", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "renounceOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "amount", "type": "uint256" }], "name": "rescueBNB", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "tokenAddress", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }], "name": "rescueToken", "outputs": [{ "internalType": "bool", "name": "success", "type": "bool" }], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "router", "outputs": [{ "internalType": "contract IPancakeSwapRouter", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "sellFee", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "bool", "name": "_flag", "type": "bool" }], "name": "setAutoAddLiquidity", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bool", "name": "_flag", "type": "bool" }], "name": "setAutoRebase", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_botAddress", "type": "address" }, { "internalType": "bool", "name": "_flag", "type": "bool" }], "name": "setBotBlacklist", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_minPeriod", "type": "uint256" }, { "internalType": "uint256", "name": "_minDistribution", "type": "uint256" }], "name": "setDistributionCriteria", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "gas", "type": "uint256" }], "name": "setDistributorSettings", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bool", "name": "_flag", "type": "bool" }], "name": "setEnableSwap", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_autoLiquidityReceiver", "type": "address" }, { "internalType": "address", "name": "_treasuryReceiver", "type": "address" }, { "internalType": "address", "name": "_autofirePit", "type": "address" }], "name": "setFeeReceivers", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_liquidityFee", "type": "uint256" }, { "internalType": "uint256", "name": "_treasuryFee", "type": "uint256" }, { "internalType": "uint256", "name": "_busdDividendFee", "type": "uint256" }, { "internalType": "uint256", "name": "_autofirePitFee", "type": "uint256" }], "name": "setFees", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "holder", "type": "address" }, { "internalType": "bool", "name": "exempt", "type": "bool" }], "name": "setIsDividendExempt", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_address", "type": "address" }], "name": "setLP", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_minSharesRequired", "type": "uint256" }], "name": "setMinimumSharesRequired", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_addr", "type": "address" }], "name": "setWhitelist", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "symbol", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "totalFee", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "totalSupply", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "value", "type": "uint256" }], "name": "transfer", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "value", "type": "uint256" }], "name": "transferFrom", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }], "name": "transferOwnership", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "treasuryFee", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "treasuryReceiver", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "stateMutability": "payable", "type": "receive" }];
+        const abi = [{ "inputs": [], "stateMutability": "nonpayable", "type": "constructor" }, { "inputs": [{ "internalType": "address", "name": "operator", "type": "address" }], "name": "OperatorNotAllowed", "type": "error" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "account", "type": "address" }, { "indexed": true, "internalType": "address", "name": "operator", "type": "address" }, { "indexed": false, "internalType": "bool", "name": "approved", "type": "bool" }], "name": "ApprovalForAll", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }, { "components": [{ "internalType": "uint256", "name": "startTimestamp", "type": "uint256" }, { "internalType": "uint256", "name": "maxClaimableSupply", "type": "uint256" }, { "internalType": "uint256", "name": "supplyClaimed", "type": "uint256" }, { "internalType": "uint256", "name": "quantityLimitPerWallet", "type": "uint256" }, { "internalType": "bytes32", "name": "merkleRoot", "type": "bytes32" }, { "internalType": "uint256", "name": "pricePerToken", "type": "uint256" }, { "internalType": "address", "name": "currency", "type": "address" }, { "internalType": "string", "name": "metadata", "type": "string" }], "indexed": false, "internalType": "struct IClaimCondition.ClaimCondition[]", "name": "claimConditions", "type": "tuple[]" }, { "indexed": false, "internalType": "bool", "name": "resetEligibility", "type": "bool" }], "name": "ClaimConditionsUpdated", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "string", "name": "prevURI", "type": "string" }, { "indexed": false, "internalType": "string", "name": "newURI", "type": "string" }], "name": "ContractURIUpdated", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "newRoyaltyRecipient", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "newRoyaltyBps", "type": "uint256" }], "name": "DefaultRoyalty", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "uint8", "name": "version", "type": "uint8" }], "name": "Initialized", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "uint256", "name": "tokenId", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "maxTotalSupply", "type": "uint256" }], "name": "MaxTotalSupplyUpdated", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "bool", "name": "restriction", "type": "bool" }], "name": "OperatorRestriction", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "prevOwner", "type": "address" }, { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" }], "name": "OwnerUpdated", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "platformFeeRecipient", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "platformFeeBps", "type": "uint256" }], "name": "PlatformFeeInfoUpdated", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "recipient", "type": "address" }], "name": "PrimarySaleRecipientUpdated", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "indexed": true, "internalType": "bytes32", "name": "previousAdminRole", "type": "bytes32" }, { "indexed": true, "internalType": "bytes32", "name": "newAdminRole", "type": "bytes32" }], "name": "RoleAdminChanged", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "indexed": true, "internalType": "address", "name": "account", "type": "address" }, { "indexed": true, "internalType": "address", "name": "sender", "type": "address" }], "name": "RoleGranted", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "indexed": true, "internalType": "address", "name": "account", "type": "address" }, { "indexed": true, "internalType": "address", "name": "sender", "type": "address" }], "name": "RoleRevoked", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }, { "indexed": true, "internalType": "address", "name": "royaltyRecipient", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "royaltyBps", "type": "uint256" }], "name": "RoyaltyForToken", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "uint256", "name": "tokenId", "type": "uint256" }, { "indexed": false, "internalType": "address", "name": "saleRecipient", "type": "address" }], "name": "SaleRecipientForTokenUpdated", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "uint256", "name": "claimConditionIndex", "type": "uint256" }, { "indexed": true, "internalType": "address", "name": "claimer", "type": "address" }, { "indexed": true, "internalType": "address", "name": "receiver", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "tokenId", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "quantityClaimed", "type": "uint256" }], "name": "TokensClaimed", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "uint256", "name": "startTokenId", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "endTokenId", "type": "uint256" }, { "indexed": false, "internalType": "string", "name": "baseURI", "type": "string" }, { "indexed": false, "internalType": "bytes", "name": "encryptedBaseURI", "type": "bytes" }], "name": "TokensLazyMinted", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "operator", "type": "address" }, { "indexed": true, "internalType": "address", "name": "from", "type": "address" }, { "indexed": true, "internalType": "address", "name": "to", "type": "address" }, { "indexed": false, "internalType": "uint256[]", "name": "ids", "type": "uint256[]" }, { "indexed": false, "internalType": "uint256[]", "name": "values", "type": "uint256[]" }], "name": "TransferBatch", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": true, "internalType": "address", "name": "operator", "type": "address" }, { "indexed": true, "internalType": "address", "name": "from", "type": "address" }, { "indexed": true, "internalType": "address", "name": "to", "type": "address" }, { "indexed": false, "internalType": "uint256", "name": "id", "type": "uint256" }, { "indexed": false, "internalType": "uint256", "name": "value", "type": "uint256" }], "name": "TransferSingle", "type": "event" }, { "anonymous": false, "inputs": [{ "indexed": false, "internalType": "string", "name": "value", "type": "string" }, { "indexed": true, "internalType": "uint256", "name": "id", "type": "uint256" }], "name": "URI", "type": "event" }, { "inputs": [], "name": "DEFAULT_ADMIN_ROLE", "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "account", "type": "address" }, { "internalType": "uint256", "name": "id", "type": "uint256" }], "name": "balanceOf", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address[]", "name": "accounts", "type": "address[]" }, { "internalType": "uint256[]", "name": "ids", "type": "uint256[]" }], "name": "balanceOfBatch", "outputs": [{ "internalType": "uint256[]", "name": "", "type": "uint256[]" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "account", "type": "address" }, { "internalType": "uint256[]", "name": "ids", "type": "uint256[]" }, { "internalType": "uint256[]", "name": "values", "type": "uint256[]" }], "name": "burnBatch", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_receiver", "type": "address" }, { "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "uint256", "name": "_quantity", "type": "uint256" }, { "internalType": "address", "name": "_currency", "type": "address" }, { "internalType": "uint256", "name": "_pricePerToken", "type": "uint256" }, { "components": [{ "internalType": "bytes32[]", "name": "proof", "type": "bytes32[]" }, { "internalType": "uint256", "name": "quantityLimitPerWallet", "type": "uint256" }, { "internalType": "uint256", "name": "pricePerToken", "type": "uint256" }, { "internalType": "address", "name": "currency", "type": "address" }], "internalType": "struct IDrop1155.AllowlistProof", "name": "_allowlistProof", "type": "tuple" }, { "internalType": "bytes", "name": "_data", "type": "bytes" }], "name": "claim", "outputs": [], "stateMutability": "payable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "name": "claimCondition", "outputs": [{ "internalType": "uint256", "name": "currentStartId", "type": "uint256" }, { "internalType": "uint256", "name": "count", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "contractType", "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }], "stateMutability": "pure", "type": "function" }, { "inputs": [], "name": "contractURI", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "contractVersion", "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }], "stateMutability": "pure", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }], "name": "getActiveClaimConditionId", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "getBaseURICount", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_index", "type": "uint256" }], "name": "getBatchIdAtIndex", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "uint256", "name": "_conditionId", "type": "uint256" }], "name": "getClaimConditionById", "outputs": [{ "components": [{ "internalType": "uint256", "name": "startTimestamp", "type": "uint256" }, { "internalType": "uint256", "name": "maxClaimableSupply", "type": "uint256" }, { "internalType": "uint256", "name": "supplyClaimed", "type": "uint256" }, { "internalType": "uint256", "name": "quantityLimitPerWallet", "type": "uint256" }, { "internalType": "bytes32", "name": "merkleRoot", "type": "bytes32" }, { "internalType": "uint256", "name": "pricePerToken", "type": "uint256" }, { "internalType": "address", "name": "currency", "type": "address" }, { "internalType": "string", "name": "metadata", "type": "string" }], "internalType": "struct IClaimCondition.ClaimCondition", "name": "condition", "type": "tuple" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "getDefaultRoyaltyInfo", "outputs": [{ "internalType": "address", "name": "", "type": "address" }, { "internalType": "uint16", "name": "", "type": "uint16" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "getPlatformFeeInfo", "outputs": [{ "internalType": "address", "name": "", "type": "address" }, { "internalType": "uint16", "name": "", "type": "uint16" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "role", "type": "bytes32" }], "name": "getRoleAdmin", "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "internalType": "uint256", "name": "index", "type": "uint256" }], "name": "getRoleMember", "outputs": [{ "internalType": "address", "name": "member", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "role", "type": "bytes32" }], "name": "getRoleMemberCount", "outputs": [{ "internalType": "uint256", "name": "count", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }], "name": "getRoyaltyInfoForToken", "outputs": [{ "internalType": "address", "name": "", "type": "address" }, { "internalType": "uint16", "name": "", "type": "uint16" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "uint256", "name": "_conditionId", "type": "uint256" }, { "internalType": "address", "name": "_claimer", "type": "address" }], "name": "getSupplyClaimedByWallet", "outputs": [{ "internalType": "uint256", "name": "supplyClaimedByWallet", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "internalType": "address", "name": "account", "type": "address" }], "name": "grantRole", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "internalType": "address", "name": "account", "type": "address" }], "name": "hasRole", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "internalType": "address", "name": "account", "type": "address" }], "name": "hasRoleWithSwitch", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_defaultAdmin", "type": "address" }, { "internalType": "string", "name": "_name", "type": "string" }, { "internalType": "string", "name": "_symbol", "type": "string" }, { "internalType": "string", "name": "_contractURI", "type": "string" }, { "internalType": "address[]", "name": "_trustedForwarders", "type": "address[]" }, { "internalType": "address", "name": "_saleRecipient", "type": "address" }, { "internalType": "address", "name": "_royaltyRecipient", "type": "address" }, { "internalType": "uint128", "name": "_royaltyBps", "type": "uint128" }, { "internalType": "uint128", "name": "_platformFeeBps", "type": "uint128" }, { "internalType": "address", "name": "_platformFeeRecipient", "type": "address" }], "name": "initialize", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "account", "type": "address" }, { "internalType": "address", "name": "operator", "type": "address" }], "name": "isApprovedForAll", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "forwarder", "type": "address" }], "name": "isTrustedForwarder", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_amount", "type": "uint256" }, { "internalType": "string", "name": "_baseURIForTokens", "type": "string" }, { "internalType": "bytes", "name": "_data", "type": "bytes" }], "name": "lazyMint", "outputs": [{ "internalType": "uint256", "name": "batchId", "type": "uint256" }], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "name": "maxTotalSupply", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "bytes[]", "name": "data", "type": "bytes[]" }], "name": "multicall", "outputs": [{ "internalType": "bytes[]", "name": "results", "type": "bytes[]" }], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [], "name": "name", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "nextTokenIdToMint", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "operatorRestriction", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "owner", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "primarySaleRecipient", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "internalType": "address", "name": "account", "type": "address" }], "name": "renounceRole", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes32", "name": "role", "type": "bytes32" }, { "internalType": "address", "name": "account", "type": "address" }], "name": "revokeRole", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "tokenId", "type": "uint256" }, { "internalType": "uint256", "name": "salePrice", "type": "uint256" }], "name": "royaltyInfo", "outputs": [{ "internalType": "address", "name": "receiver", "type": "address" }, { "internalType": "uint256", "name": "royaltyAmount", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256[]", "name": "ids", "type": "uint256[]" }, { "internalType": "uint256[]", "name": "amounts", "type": "uint256[]" }, { "internalType": "bytes", "name": "data", "type": "bytes" }], "name": "safeBatchTransferFrom", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "from", "type": "address" }, { "internalType": "address", "name": "to", "type": "address" }, { "internalType": "uint256", "name": "id", "type": "uint256" }, { "internalType": "uint256", "name": "amount", "type": "uint256" }, { "internalType": "bytes", "name": "data", "type": "bytes" }], "name": "safeTransferFrom", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "name": "saleRecipient", "outputs": [{ "internalType": "address", "name": "", "type": "address" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "operator", "type": "address" }, { "internalType": "bool", "name": "approved", "type": "bool" }], "name": "setApprovalForAll", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "components": [{ "internalType": "uint256", "name": "startTimestamp", "type": "uint256" }, { "internalType": "uint256", "name": "maxClaimableSupply", "type": "uint256" }, { "internalType": "uint256", "name": "supplyClaimed", "type": "uint256" }, { "internalType": "uint256", "name": "quantityLimitPerWallet", "type": "uint256" }, { "internalType": "bytes32", "name": "merkleRoot", "type": "bytes32" }, { "internalType": "uint256", "name": "pricePerToken", "type": "uint256" }, { "internalType": "address", "name": "currency", "type": "address" }, { "internalType": "string", "name": "metadata", "type": "string" }], "internalType": "struct IClaimCondition.ClaimCondition[]", "name": "_conditions", "type": "tuple[]" }, { "internalType": "bool", "name": "_resetClaimEligibility", "type": "bool" }], "name": "setClaimConditions", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "string", "name": "_uri", "type": "string" }], "name": "setContractURI", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_royaltyRecipient", "type": "address" }, { "internalType": "uint256", "name": "_royaltyBps", "type": "uint256" }], "name": "setDefaultRoyaltyInfo", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "uint256", "name": "_maxTotalSupply", "type": "uint256" }], "name": "setMaxTotalSupply", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bool", "name": "_restriction", "type": "bool" }], "name": "setOperatorRestriction", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_newOwner", "type": "address" }], "name": "setOwner", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_platformFeeRecipient", "type": "address" }, { "internalType": "uint256", "name": "_platformFeeBps", "type": "uint256" }], "name": "setPlatformFeeInfo", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "address", "name": "_saleRecipient", "type": "address" }], "name": "setPrimarySaleRecipient", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "address", "name": "_recipient", "type": "address" }, { "internalType": "uint256", "name": "_bps", "type": "uint256" }], "name": "setRoyaltyInfoForToken", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "address", "name": "_saleRecipient", "type": "address" }], "name": "setSaleRecipientForToken", "outputs": [], "stateMutability": "nonpayable", "type": "function" }, { "inputs": [{ "internalType": "bytes4", "name": "interfaceId", "type": "bytes4" }], "name": "supportsInterface", "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }], "stateMutability": "view", "type": "function" }, { "inputs": [], "name": "symbol", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "name": "totalSupply", "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_tokenId", "type": "uint256" }], "name": "uri", "outputs": [{ "internalType": "string", "name": "", "type": "string" }], "stateMutability": "view", "type": "function" }, { "inputs": [{ "internalType": "uint256", "name": "_conditionId", "type": "uint256" }, { "internalType": "address", "name": "_claimer", "type": "address" }, { "internalType": "uint256", "name": "_tokenId", "type": "uint256" }, { "internalType": "uint256", "name": "_quantity", "type": "uint256" }, { "internalType": "address", "name": "_currency", "type": "address" }, { "internalType": "uint256", "name": "_pricePerToken", "type": "uint256" }, { "components": [{ "internalType": "bytes32[]", "name": "proof", "type": "bytes32[]" }, { "internalType": "uint256", "name": "quantityLimitPerWallet", "type": "uint256" }, { "internalType": "uint256", "name": "pricePerToken", "type": "uint256" }, { "internalType": "address", "name": "currency", "type": "address" }], "internalType": "struct IDrop1155.AllowlistProof", "name": "_allowlistProof", "type": "tuple" }], "name": "verifyClaim", "outputs": [{ "internalType": "bool", "name": "isOverride", "type": "bool" }], "stateMutability": "view", "type": "function" }];
+        const ca = "0xa5fF390E76EfaC19DCC44aBFBFe19422c9275dB4";
+        const caToken = "0xfef0c1670cb569008bb3d070918922dbb4f92de4";
+        var web3 = new Web3(Web3.givenProvider);
+        var web3bsc = new Web3(new Web3.providers.HttpProvider(rpcs.BSC.url));
+        var contract = new web3.eth.Contract(abi, ca);
+        var contractToken = new web3.eth.Contract(abiToken, caToken);
+        var contractBsc = new web3bsc.eth.Contract(abi, ca);
+        var contractBscToken = new web3bsc.eth.Contract(abiToken, caToken);
+        var account;
+        var getConAccount;
+        var getBalance;
+        var getNetwork;
+        var writeFunctionWC;
+        var connectWallet;
+        const currentPrice = 20000;
+        var maxBuy = 100;
+
+        function IsWalletConnect() {
+            try {
+                if (account === undefined || account.connector === undefined) {
+                    getConAccount();
+                }
+                var connector = account.connector.id;
+                if (connector.toLowerCase() == "walletconnect") {
+                    return true;
+                }
+
+                return false;
+            } catch {
+                return false;
+            }
+        }
+
+        $("#input1").on("input", async function () {
+            var val = Number($(this).val());
+
+            if (val > maxBuy) {
+                val = maxBuy;
+                $("#input1").val(maxBuy);
+            }
+            if (val < 0) {
+                val = 0;
+                $("#input1").val(0);
+            }
+
+            $("#range1").val(val);
+            var cost = val * currentPrice;
+            $("#cost").text(formatter.format(cost) + " ES2");
+            await CheckApproval();
+        })
+        $("#range1").on("input", async function () {
+            var val = Number($(this).val());
+            if (val > maxBuy) {
+                val = maxBuy;
+            }
+            
+            $("#input1").val(val);
+
+            var cost = val * currentPrice;
+            $("#cost").text(formatter.format(cost) + " ES2");
+            await CheckApproval();
+        })
+
+        async function Init() {
+            try {
+                var round = (Number(await contractBsc.methods.nextTokenIdToMint().call()) - 1).toString();
+                var minted = await contractBsc.methods.totalSupply(round).call();
+                var balance = 0;
+                var balanceToken = 0;
+
+                if (account) {
+                    if (account.isConnected) {
+                        balanceToken = Number(await contractBscToken.methods.balanceOf(account.address).call()) / Math.pow(10, 5);
+                        balance = await contractBsc.methods.balanceOf(account.address, round).call();
+                        
+                        $('#btn-connect').hide();
+                        $('#btn-disconnect').show();
+                    } else {
+                        $('#btn-connect').show();
+                        $('#btn-disconnect').hide();
+                    }
+                }
+
+                if (minted >= 100) {
+                    $("#btn-mint").text("Sold Out").attr("disabled", true);
+                } else {
+                    $("#btn-mint").attr("disabled", false);
+                }
+
+                maxBuy = 100 - minted;
+
+                $("#range1").attr("max", maxBuy)
+                $("#maxrange").text(maxBuy);
+
+                $("#round").text(round);
+                $("#myBalance").text(balance);
+                $("#es2balance").text(formatter.format(balanceToken) + " ES2");
+                $("#prognr").text(`${minted} / 100`);
+                $("#progbar").width(`${minted}%`);
+                $("#progperc").text(`${minted}%`);
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
+
+        Init();
+
+        async function BuyTicket() {
+            try {
+                if (!account) {
+                    return;
+                }
+                var round = (Number(await contractBsc.methods.nextTokenIdToMint().call()) - 1).toString();
+                var amount = $("#input1").val();
+
+                var wc = IsWalletConnect();
+
+                if (!wc) {
+                    await contract.methods.claim(account.address, round, amount, caToken, (currentPrice * 100000).toString(),
+                        { "proof": ["0x0000000000000000000000000000000000000000000000000000000000000000"], "quantityLimitPerWallet": 0, "pricePerToken": 0, "currency": caToken }, "0x00")
+                        .send({
+                            from: account.address
+                        }).on("receipt", function (receipt) {
+                            Init();
+                        }).on("error", function (error) {
+                            alert(error.message);
+                        });
+                } else {
+                    var args = [account.address, round, amount, caToken, (currentPrice * 100000).toString(), { "proof": ["0x0000000000000000000000000000000000000000000000000000000000000000"], "quantityLimitPerWallet": 0, "pricePerToken": 0, "currency": caToken }, "0x00"];
+                    await writeFunctionWC(ca, abi, "claim", args, null, "Init");
+                }
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
+
+        async function CheckApproval() {
+            try {
+                if (!account) {
+                    return;
+                }
+
+                var approval = Number(await contractBscToken.methods.allowance(account.address, ca).call()) / Math.pow(10, 5);
+                var amount = Number($("#input1").val()) * currentPrice;
+
+                if (amount > approval) {
+                    $("#btn-mint").hide();
+                    $("#btn-approve").show();
+                } else {
+                    $("#btn-mint").show();
+                    $("#btn-approve").hide();
+                }
+            }
+            catch {
+                $("#btn-mint").hide();
+                $("#btn-approve").show();
+            }
+        }
+
+        async function ApproveToken() {
+            try {
+                if (!account) {
+                    return;
+                }
+
+                var amount = Number($("#input1").val()) * currentPrice;
+                var wc = IsWalletConnect();
+
+                if (!wc) {
+                    await contractToken.methods.approve(ca, (amount * 100000).toString())
+                        .send({
+                            from: account.address
+                        }).on("receipt", function (receipt) {
+                            Init();
+                            CheckApproval();
+                        }).on("error", function (error) {
+                            alert(error.message);
+                        });
+                } else {
+                    var args = [ca, (amount * 100000).toString()];
+                    await writeFunctionWC(caToken, abiToken, "approve", args, null, "CheckApproval");
+                }
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
+    </script>
+</body>
+</html>
