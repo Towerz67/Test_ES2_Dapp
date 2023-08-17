@@ -22,135 +22,11 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link href='css/site2.css' rel='stylesheet'>
-    <link href='css/util.css' rel='stylesheet'>
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href='css/site.css' rel='stylesheet'>
+    <link href='css/util.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="navbar-mob hidepc">
-        <div class="row" style="padding:0; margin:0;">
-            <!--<div class="col-cust text-center" style="border-right: solid 2px #3b116f">
-                <a class="button-mob" href="/">
-                    <i class="bx bx-home fs-4 pt-3"></i>
-                    <br />
-                    <h6 class="pb-1">Home</h6>
-                </a>
-            </div>-->
-            <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
-                <a class="button-mob" href="/raffle">
-                    <i class="bx bx-bank active fs-4 pt-3"></i>
-                    <br />
-                    <h6 class="pb-1 active">Raff</h6>
-                </a>
-            </div>
-            <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
-                <a class="button-mob" href="/account">
-                    <i class="bx bx-user fs-4 pt-3"></i>
-                    <br />
-                    <h6 class="pb-1">Acc</h6>
-                </a>
-            </div>
-            <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
-                <a class="button-mob" href="/crew">
-                    <i class="bx bx-chair fs-4 pt-3"></i>
-                    <br />
-                    <h6 class="pb-1">Crew</h6>
-                </a>
-            </div>
-            <div class="col-cust text-center" style="border-right: solid 2px #3b116f">
-                <a class="button-mob" href="/minting">
-                    <i class="bx bx-chair fs-4 pt-3"></i>
-                    <br />
-                    <h6 class="pb-1">Mint</h6>
-                </a>
-            </div>
-            <div class="col-cust text-center">
-                <a class="button-mob" href="/staking">
-                    <i class="bx bxs-bank fs-4 pt-3"></i>
-                    <br />
-                    <h6 class="pb-1">Stake</h6>
-                </a>
-            </div>
-        </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand text-gradient2 fs-5" href="/" style="font-weight:700;"><img alt="EverSAFU V2 Logo" class="brand-logo" src="img/EverSAFU.png"><span class="atmospheric fs-5">E<span class="atmospheric hidemob">ver</span>S<span class="atmospheric hidemob">afu V</span>2</span></a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://eversafuv2.com">Project Site</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Token
-                        </a>
-                        <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/account">Account</a></li>
-                            <li><a class="dropdown-item" href="/raffle">Raffle</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            NFT
-                        </a>
-                        <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="/minting">Minting & Gallery</a></li>
-                            <li><a class="dropdown-item" href="/crew">Crew Quarters</a></li>
-                            <li><hr class="dropdown-divider" style="background:black !important; opacity: 1;"></li>
-                            <li><a class="dropdown-item" href="/staking">Staking</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <form class="d-flex">
-                <div class="hidepc" style="margin-right:1.5rem; margin-top:0.5rem;">
-                    <a class="fs-2" style="color: #6dbffc !important " onclick="$('.nav-mob').toggle(300);"><i class="bx bx-menu"></i></a>
-                </div>
-
-                <div class="container">
-                    <div class="navi d-flex flex-row w-100 justify-content-between">
-                        <div class="d-flex flex-row align-items-center">
-                            <!--<img src="img/Logo.png" style="max-width:50px;" />-->
-                            <a class='hide-sm mx-md-5 mx-3 td-none cp text-white-60 fw-600 active' href="#">Raffle</a>
-                            <a class='hide-sm mx-md-5 mx-3 td-none cp text-white-60 fw-600' target="_blank" href="https://eversafuv2.com">Website</a>
-                            <a class='hide-sm mx-md-5 mx-3 mr-0 td-none cp text-white-60 fw-600' target="_blank" href="https://app.eversafuv2.com">dApp</a>
-                        </div>
-                        <div class="d-flex flex-row align-items-center">
-                            <button id="btn-connect" class="btn-1 text-white">Connect</button>
-                            <button id="btn-disconnect" class="btn-1 text-white" style="display:none;">
-                                <div class="d-flex align-items-center">
-                                    <i class='bx bxs-wallet-alt fs-4 text-white'></i>
-                                </div>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!--<div class="btn-gradient-outline-wrap" id="btn-connect">
-                    <button class="btn btn-gradient-outline fs-5" type="button" data-bs-toggle="modal" data-bs-target="#walletModal">Connect</button>
-                </div>
-
-                <div class="dropstart" style="display:none;" id="btn-disconnect">
-                    <button class="btn-gradient-outline-wrap" type="button" id="walletMenu" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius:15px;">
-                        <i class="btn-gradient-outline bx bx-wallet fs-3" style="padding:0.65rem;"></i>
-                    </button>
-
-                    <ul class="dropdown-menu btn-gradient-outline-wrap" aria-labelledby="walletMenu" style="position:absolute;">
-                        <li><span class="dropdown-item" id="useraccount"></span></li>
-                        <li><hr class="dropdown-divider" style="background:black !important; opacity: 1;"></li>
-                        <li><a class="dropdown-item" onclick="AddCoin();">Add ES2</a></li>
-                        <li><a class="dropdown-item" onclick="AddBUSD();">Add BUSD</a></li>
-                        <li><a class="dropdown-item" onclick="Disconnect();">Disconnect</a></li>
-                    </ul>
-                </div>-->
-            </form>
-        </div>
-    </nav>
-    <!--<nav>
+    <nav>
         <div class="container">
             <div class="navi d-flex flex-row w-100 justify-content-between">
                 <div class="d-flex flex-row align-items-center">
@@ -169,7 +45,7 @@
                 </div>
             </div>
         </div>
-    </nav>-->
+    </nav>
     <div class="main container">
         <div class="row m-0 p-0 box-1 px-5 py-4">
             <div class="col-md-6 d-flex justify-content-center flex-column align-items-center text-center">
@@ -206,7 +82,7 @@
                 </div>
                 <div class="d-flex flex-row align-items-center justify-content-between my-5" style="min-width:20vw;">
                     <p class="text-white-60 ws-nowrap mb-0 hide-xs" id="minrange">0</p>
-                    <input type="range" class="slider2 mx-3" id="range1" max="100" min="0" value="0" step="1">
+                    <input type="range" class="slider mx-3" id="range1" max="100" min="0" value="0" step="1">
                     <p class="text-white-60 ws-nowrap mb-0 hide-xs" id="maxrange">100</p>
                 </div>
                 <div class="d-flex w-100 justify-content-center mt-5 mb-3">
