@@ -89,14 +89,11 @@ async function Connect() {
         try {
             web3.setProvider(Web3.givenProvider);
             var acc = await ethereum.request({ method: 'eth_requestAccounts' });
-            //account = acc.toString();
-            if (Array.isArray(acc)) {
+            if (Array.isArray(acc)){
                 account = acc[0];
-            }
-            else
-            {
+            }else {
                 account = acc.toString();
-            };
+            }
             $("#btn-connect").hide();
             $("#btn-connect-mob").hide();
             $("#btn-disconnect").show();
