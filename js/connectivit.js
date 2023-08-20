@@ -53,7 +53,14 @@ async function Connect() {
         try {
             web3.setProvider(Web3.givenProvider);
             var acc = await window.ethereum.request({ method: 'eth_requestAccounts' });
-            account = acc.toString();
+            //account = acc.toString();
+            if (Array.isArray(acc)) {
+                account = acc[0];
+              }
+              else
+              {
+                account = acc.toString();
+              };
             $("#btn-connect").hide();
             $("#btn-connect-mob").hide();
             $("#btn-disconnect").show();
@@ -94,7 +101,14 @@ async function ConnectWC() {
         if (provider.connected != true) {
             var acc = await provider.enable();
             web3.setProvider(provider);
-            account = acc[0];
+            //account = acc.toString();
+            if (Array.isArray(acc)) {
+                account = acc[0];
+              }
+              else
+              {
+                account = acc.toString();
+              };
             $("#btn-connect").hide();
             $("#btn-connect-mob").hide();
             $("#btn-disconnect").show();
