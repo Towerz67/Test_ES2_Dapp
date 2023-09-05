@@ -837,7 +837,10 @@
                         }
                         break;
                     case "V4":
-                        _contract.methods.stake(unstaked)
+
+                         await _contract.methods.HarvestAll(_name)
+
+                         await _contract.methods.stake(unstaked)
                             .send({
                                 from: account
                             })
@@ -899,7 +902,10 @@
                         }
                         break;
                     case "V4":
-                        _contract.methods.unstake(staked)
+
+                        await _contract.methods.HarvestAll(_name)
+
+                        await _contract.methods.unstake(staked)
                             .send({
                                 from: account
                             })
@@ -958,7 +964,7 @@
                             });
                         break;
                     case "V4":
-                        _contract.methods.claim(staked)
+                        await _contract.methods.claim(staked)
                             .send({
                                 from: account
                             })
@@ -1019,7 +1025,8 @@
                         }
                         break;
                     case "V4":
-                        _contract.methods.unstake(staked)
+                        await _contract.methods.HarvestAll(_name)
+                        await _contract.methods.unstake(staked)
                             .send({
                                 from: account
                             })
@@ -1081,7 +1088,8 @@
                         }
                         break;
                     case "V4":
-                        _contract.methods.stake(unstaked)
+                        await _contract.methods.HarvestAll(_name)
+                        await _contract.methods.stake(unstaked)
                             .send({
                                 from: account
                             })
