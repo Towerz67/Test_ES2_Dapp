@@ -1086,6 +1086,7 @@
                                 from: account
                             })
                             .on("receipt", function (receipt) {
+                                HarvestAll();
                                 Init_Staking();
                             })
                             .on("error", function (error) {
