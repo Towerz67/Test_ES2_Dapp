@@ -837,10 +837,7 @@
                         }
                         break;
                     case "V4":
-
-                         await _contract.methods.HarvestAll(_name)
-
-                         await _contract.methods.stake(unstaked)
+                         _contract.methods.stake(unstaked)
                             .send({
                                 from: account
                             })
@@ -902,10 +899,7 @@
                         }
                         break;
                     case "V4":
-
-                        await _contract.methods.HarvestAll(_name)
-
-                        await _contract.methods.unstake(staked)
+                        _contract.methods.unstake(staked)
                             .send({
                                 from: account
                             })
@@ -1025,8 +1019,7 @@
                         }
                         break;
                     case "V4":
-                        await _contract.methods.HarvestAll(_name)
-                        await _contract.methods.unstake(staked)
+                        _contract.methods.unstake(staked)
                             .send({
                                 from: account
                             })
@@ -1088,7 +1081,6 @@
                         }
                         break;
                     case "V4":
-                         _contract.methods.HarvestAll(_name)
                          _contract.methods.stake(unstaked)
                             .send({
                                 from: account
